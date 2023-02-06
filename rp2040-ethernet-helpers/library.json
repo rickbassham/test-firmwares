@@ -1,0 +1,25 @@
+{
+    "name": "RP2040-Ethernet-Helpers",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": "rp2040, ethernet",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/darkdragonsastro/rp2040-ethernet-helpers.git"
+    },
+    "authors": [
+        {
+            "name": "Rick Bassham",
+            "email": "rick@darkdragonsastro.com",
+            "maintainer": true
+        }
+    ],
+    "homepage": "https://github.com/darkdragonsastro/rp2040-ethernet-helpers/",
+    "dependencies": {
+        "rickbassham/EthernetWebServer": "https://github.com/rickbassham/EthernetWebServer.git",
+        "LittleFS": "*",
+        "bitbank2/unzipLIB": "^1.0.0"
+    },
+    "frameworks": "arduino",
+    "platforms": "raspberrypi"
+}

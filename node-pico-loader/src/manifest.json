@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "Dark Dragons Astronomy - Dragon Lair Roof Controller",
+    "short_name": "Dragon Lair",
+    "start_url": "./index.html",
+    "icons": [
+        {
+            "src": "google-touch-icon.png",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen"
+}

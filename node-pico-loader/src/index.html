@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dragon Lair</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Dark Dragons Astronomy - Dragon Lair Roof Controller">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="favicon.svg">
+    <link rel="mask-icon" href="mask-icon.svg" color="#000000">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="mui.css">
+    <script src="mui.js"></script>
+</head>
+
+<body>
+    <!-- example content -->
+    <div class="mui-container">
+        <div class="mui-panel">
+            <h1>Dragon Lair</h1>
+            <h2>Roll Off Roof Controller</h2>
+            <button class="mui-btn mui-btn--primary mui-btn--raised">My Button</button>
+        </div>
+    </div>
+
+    <script>
+        setInterval(function () {
+            fetch('/status')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (myJson) {
+                    console.log(myJson);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        }, 1000);
+    </script>
+</body>
+
+</html>

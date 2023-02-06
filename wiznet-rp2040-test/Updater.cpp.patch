@@ -1,0 +1,23 @@
+diff --git a/libraries/Updater/src/Updater.cpp b/libraries/Updater/src/Updater.cpp
+index 237132b..9e3a1d0 100644
+--- a/libraries/Updater/src/Updater.cpp
++++ b/libraries/Updater/src/Updater.cpp
+@@ -20,7 +20,6 @@
+ 
+ #include "Updater.h"
+ #include <PolledTimeout.h>
+-#include "StackThunk.h"
+ #include "LittleFS.h"
+ #include <hardware/flash.h>
+ #include <PicoOTA.h>
+@@ -30,6 +29,10 @@
+ #define ARDUINO_SIGNING 0
+ #endif
+ 
++#if ARDUINO_SIGNING
++#include "StackThunk.h"
++#endif
++
+ extern uint8_t _FS_start;
+ extern uint8_t _FS_end;
+ 
